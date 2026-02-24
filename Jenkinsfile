@@ -3,10 +3,12 @@ pipeline{
     stages("CI workFlow"){
         
         stage(""){
+            step{
+                bat "pip install requirements.txt"
+                bat "python ml_pipeline.py"
 
-            bat "pip install requirements.txt"
+            }
 
-            bat "python ml_pipeline.py"
         }
     }
     post{

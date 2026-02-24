@@ -2,12 +2,12 @@ pipeline{
     agent any
     stages{
         stage("setup"){
-            step{
+            steps{
                 bat "pip install requirements.txt"
             }
         }
         stage("run"){
-            step{
+            steps{
                 bat "python ml_pipeline.py"
             }
         }

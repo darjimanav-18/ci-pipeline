@@ -1,9 +1,7 @@
 pipeline{
     agent any
-    stages("CI workFlow"){
-        
-        stage(""){
-            step{
+        step(""){
+            stage{
                 bat "pip install requirements.txt"
                 bat "python ml_pipeline.py"
 
@@ -19,4 +17,3 @@ pipeline{
             echo "code Failure"
         }
     }
-}

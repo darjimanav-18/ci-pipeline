@@ -1,15 +1,13 @@
 pipeline{
     agent any
     stages{
-        void setUp( "Installing Requiement ") {
+        
+        steps(""){
+            echo "Installing Requiement "
             bat "pip install requirements.txt"
-            
+            echo "Runnig the python file"
+            bat "python ml_pipeline.py"
         }
-        // {
-        //     echo "Installing Requiement "
-        //     echo "Runnig the python file"
-        //     bat "python ml_pipeline.py"
-        // }
     }
     post{
         success{

@@ -10,7 +10,7 @@ y=[2, 4,6]
 
 model.fit(x, y)
 
-predict=model.predict([[4]])
+predict=model.predict([4])
 print(predict)
 if abs(predict-8.0)<.1:
     print("Prediction sucessfully done")

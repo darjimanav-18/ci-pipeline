@@ -1,5 +1,6 @@
 pipeline{
     agent any
+    stages{
         step("install and run"){
             stage{
                 bat "pip install requirements.txt"
@@ -17,3 +18,5 @@ pipeline{
             echo "code Failure"
         }
     }
+
+}

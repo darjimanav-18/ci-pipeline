@@ -1,8 +1,8 @@
 pipeline{
     agent any
 
-step{
-        stages("Hello"){
+    stages(sdfgs){
+        stage("Hello"){
             bat "echo 'hello'"
         }
     }

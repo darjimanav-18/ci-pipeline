@@ -1,10 +1,8 @@
 pipeline{
     agent any
-
-    stages{
-        step("Push"){
-            
+    steps{
+        stages("setup"){
+            bat "pip install requirements.txt"
         }
     }
 }
-

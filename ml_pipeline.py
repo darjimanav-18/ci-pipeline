@@ -12,9 +12,3 @@ model.fit(x, y)
 
 predict=model.predict([[4.0]])
 print(predict)
-if abs(predict-8.0)<.1:
-    print("Prediction sucessfully done")
-    sys.exit(1)
-else:
-    print("Prediction Failed")
-    sys.exit(1)

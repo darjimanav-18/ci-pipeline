@@ -1,12 +1,12 @@
 pipeline{
     agent any
     stages{
-        steps ("Requirements install")
+        steps
         {
             echo "Installing Requiement "
             bat "python -m pip install -u requirements.txt"
         }
-        steps ("Running the ml_pipeline file")
+        steps
         {
             echo "Runnig the python file"
             bat "python ml_pipeline.py"

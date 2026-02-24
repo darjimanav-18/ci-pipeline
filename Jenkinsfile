@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage("Push"){
             step{
-                bat "echo 'hello'"
+                echo 'hello'
             }
         }
     }

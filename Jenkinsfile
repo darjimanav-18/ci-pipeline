@@ -1,8 +1,10 @@
 pipeline{
     agent any
-    step{
-        stages("setup"){
-            bat "pip install requirements.txt"
+    stages{
+        stage("setup"){
+            step{
+                bat "pip install requirements.txt"
+            }
         }
     }
 }

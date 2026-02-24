@@ -3,7 +3,7 @@ pipeline{
 
     stages(sdfgs){
         stage("Hello"){
-            bat "echo 'hello'"
+            "echo 'hello'"
         }
     }
 }

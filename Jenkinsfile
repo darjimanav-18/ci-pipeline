@@ -1,5 +1,5 @@
 pipeline{
-    agnet any
+    agent any
     stages{
         stage("Requirements install"){
             echo "Installing Requiement "

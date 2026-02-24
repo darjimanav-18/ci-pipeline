@@ -11,7 +11,9 @@ pipeline{
                 bat "python ml_pipeline.py"
             }
         }
-        post{
+        
+    }
+    post{
             success{
                 echo "Success"
             }
@@ -19,5 +21,4 @@ pipeline{
                 echo  "Fail"
             }
         }
-    }
 }

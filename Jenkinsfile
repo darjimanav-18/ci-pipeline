@@ -1,7 +1,7 @@
 pipeline{
     agent any
 
-    stages(sdfgs){
+    stages("sdfgs"){
         stage("Hello"){
             "echo 'hello'"
         }

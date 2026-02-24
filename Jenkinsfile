@@ -1,11 +1,9 @@
 pipeline{
     agent any
-    stages("XI"){
-        step{
-        
-            stages("Hello"){
-                bat "echo 'hello'"
-            }
+
+step@{
+        stages("Hello"){
+            bat "echo 'hello'"
         }
     }
 }

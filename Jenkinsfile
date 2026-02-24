@@ -1,7 +1,7 @@
 pipeline{
     agent any
 
-step@{
+step{
         stages("Hello"){
             bat "echo 'hello'"
         }
